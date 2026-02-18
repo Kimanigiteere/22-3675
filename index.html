@@ -1,73 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Luxury Cars</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Car Hub | Performance & Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Luxury Cars</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Cars</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+<header>
+  <div class="container">
+    <h1 class="logo">CLEAN CAR <span>HUB</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#specs">Specifications</a>
+      <a href="#videos">Videos</a>
+      <a href="#maintenance">Maintenance</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- HERO VIDEO SECTION -->
-    <section class="hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-        </video>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2>Premium Performance. <br><span>Clean Engineering.</span></h2>
+    <p>Exploring the intersection of automotive speed and sustainable design.</p>
+    <a href="#specs" class="btn">View Specifications</a>
+  </div>
+</section>
 
-        <div class="hero-text">
-            <h2>Drive Your Dream</h2>
-            <p>Power. Speed. Luxury.</p>
-            <button>Explore Cars</button>
-        </div>
-    </section>
+<section id="specs" class="container section">
+  <div class="section-header">
+    <span class="badge">Technical Overview</span>
+    <h2>Engineering Excellence</h2>
+  </div>
+  
+  <div class="specs-grid">
+    <div class="specs-text">
+      <p><strong>The Bugatti Chiron Super Sport represents the pinnacle of internal combustion engineering.</strong></p>
+      <p><em>Aerodynamics play a crucial role in maintaining stability at speeds exceeding 300 mph.</em></p>
+      <p><u>All flagship models must strictly adhere to global safety and emissions standards.</u></p>
+      
+      <div class="tech-specs">
+        <p>Upcoming Debut: Oct 12<sup>th</sup> | Drag Coefficient: 0.23<sup>cd</sup></p>
+        <p>Fuel Chemistry: Octane (C<sub>8</sub>H<sub>18</sub>) & Low CO<sub>2</sub> output.</p>
+        <p>Sustainability: <s>Leaded gasoline formulas</s> are now strictly prohibited.</p>
+        <p><mark>Market Forecast: EVs are expected to dominate 50% of the market by 2030.</mark></p>
+      </div>
 
-    <!-- CARS SECTION -->
-    <section class="cars">
-        <h2>Featured Cars</h2>
+      <p class="quote"><q>The car is the closest thing we will ever create to something that is alive.</q> — Sir Henry Royce</p>
+    </div>
 
-        <div class="car-container">
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=80">
-                <h3>BMW M4</h3>
-                <p>$70,000</p>
-            </div>
+    <blockquote class="main-quote" cite="Automotive Weekly">
+      "The shift toward autonomous driving technology is not just a trend but a fundamental redesign of how humans interact with urban environments and long-distance travel."
+    </blockquote>
+  </div>
+</section>
 
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80">
-                <h3>Audi R8</h3>
-                <p>$120,000</p>
-            </div>
+<section id="videos" class="container section">
+  <div class="section-header">
+    <span class="badge">Visual Experience</span>
+    <h2>Performance in Motion</h2>
+  </div>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h4>Aerodynamic Testing</h4>
+        <p>Witness the precision of high-speed stability trials.</p>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h4>Electric Innovation</h4>
+        <p>Exploring the next generation of silent power.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1000&q=80">
-                <h3>Mercedes AMG</h3>
-                <p>$95,000</p>
-            </div>
-        </div>
-    </section>
+<hr class="divider">
 
-    <!-- VIDEO SHOWCASE SECTION -->
-    <section class="video-section">
-        <h2>Watch Our Cars in Action</h2>
+<section id="maintenance" class="container section">
+  <div class="maintenance-grid">
+    <div class="list-card">
+      <h3>Diagnostic Checklist</h3>
+      <p>System Check Status:<br>Tire Pressure<br>Oil Levels<br>Brake Pads<br>Light Diagnostics</p>
+    </div>
 
-        <video controls class="showcase-video">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        </video>
-    </section>
+    <div class="list-card">
+      <h3>Digital Blueprint</h3>
+      <pre>
+      ______
+     /|_||_\`.__
+    (   _    _ _\
+    =`-(_)--(_)-'
+      </pre>
+    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>� 2026 Luxury Cars | All Rights Reserved</p>
-    </footer>
+    <div class="list-card">
+      <h3>Market Leaders</h3>
+      <ul>
+        <li>Tesla Performance</li>
+        <li>Porsche Motorsport</li>
+        <li>Ferrari S.p.A</li>
+        <li>Toyota Gazoo</li>
+        <li>BMW M Division</li>
+      </ul>
+    </div>
+
+    <div class="list-card">
+        <h3>Critical Components</h3>
+        <ul>
+          <li>Drivetrain
+            <ul>
+              <li>Transmission</li>
+              <li>Differential</li>
+            </ul>
+          </li>
+          <li>Engine Internals
+            <ul>
+              <li>Pistons</li>
+              <li>Camshaft</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="engine-tiers">
+    <h3>Engine Tier Performance</h3>
+    <div class="tier-row"><hr><span>V6: Balanced Efficiency</span><hr></div>
+    <div class="tier-row"><hr><span>V8: High Performance</span><hr></div>
+    <div class="tier-row"><hr><span>V12: Ultimate Luxury</span><hr></div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-header">
+    <h2>Global Performance Metrics</h2>
+  </div>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th><th>HP</th><th>0-60</th><th>Top Speed</th><th>MPG</th><th>Weight</th><th>Price</th><th>Year</th><th>Engine</th><th>Drive</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Model S</td><td>1020</td><td>1.9s</td><td>200mph</td><td>120e</td><td>4766lb</td><td>$89k</td><td>2024</td><td>Tri-Motor</td><td>AWD</td></tr>
+        <tr><td>911 GT3</td><td>502</td><td>3.2s</td><td>197mph</td><td>18</td><td>3126lb</td><td>$169k</td><td>2024</td><td>Flat-6</td><td>RWD</td></tr>
+        <tr><td>Type R</td><td>315</td><td>4.9s</td><td>169mph</td><td>24</td><td>3188lb</td><td>$44k</td><td>2024</td><td>I-4</td><td>FWD</td></tr>
+        <tr><td>F-150</td><td>450</td><td>5.4s</td><td>107mph</td><td>19</td><td>5000lb</td><td>$36k</td><td>2024</td><td>V6</td><td>4WD</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Clean Car Hub — Automotive Engineering Assessment</p>
+  </div>
+</footer>
 
 </body>
 </html>
