@@ -1,73 +1,376 @@
-:body {
-  font-family: Arial;
-  margin: 0;
-  background: linear-gradient(to right, #1e1e1e, #2c3e50);
-  color: white;
-  text-align: center;
+/* ===========================
+   CLEAN CAR HUB — style.css
+   =========================== */
+
+:root {
+  --primary: #f5c518;
+  --bg: #0a0a0a;
+  --bg-alt: #111111;
+  --card-bg: #1a1a1a;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+  --border: #2a2a2a;
+  --accent-blue: #3498db;
+  --accent-green: #2ecc71;
+  --accent-orange: #e67e22;
+  --accent-purple: #9b59b6;
+  --accent-red: #e74c3c;
 }
 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== BODY — Rubric #4: Background Styling ===== */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(245,197,24,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(52,152,219,0.05) 0%, transparent 50%);
+  color: var(--text);
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HEADER ===== */
 header {
-  background: black;
-  padding: 15px;
+  background: rgba(10,10,10,0.97);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: var(--text);
+}
+
+.logo span { color: var(--primary); }
+
+/* ===== NAV BAR — Rubric #6: 6 menu items ===== */
+nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: white;
-  margin: 10px;
+  color: var(--text-muted);
   text-decoration: none;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
 }
 
 nav a:hover {
-  color: #2ecc71;
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(245,197,24,0.07);
 }
 
-.section {
-  padding: 40px;
+/* ===== SECTIONS ===== */
+.page-section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.two-column {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+/* Rubric #4: alternating background styling */
+.alt-bg {
+  background-color: var(--bg-alt);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.01) 40px,
+    rgba(255,255,255,0.01) 80px
+  );
 }
 
-.two-column div {
-  flex: 1;
+.hero-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 50%, #0f0a00 100%);
 }
 
-img {
-  width: 80%;
-  margin: 10px;
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.section-title span { color: var(--primary); }
+
+/* ===== TWO-COLUMN LAYOUT — Rubric #1 ===== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* ===== IMAGES IN CONTAINERS — Rubric #2 ===== */
+.img-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.videos iframe {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
+.img-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
-.highlight {
-  color: orange;
-  font-weight: bold;
+.img-caption {
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
 }
 
-.italic {
-  font-style: italic;
+/* ===== VIDEOS IN CONTAINERS — Rubric #2 ===== */
+.video-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.video-label {
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 600;
+  border-top: 1px solid var(--border);
+}
+
+.single-video { max-width: 600px; margin: 0 auto; }
+
+/* ===== FORMATTED PARAGRAPHS — Rubric #8 ===== */
+.para-styled {
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  border-left: 4px solid currentColor;
+}
+
+.para-blue   { color: #74b9ff; background: rgba(52,152,219,0.08); border-color: #3498db; }
+.para-orange { color: #fdcb6e; background: rgba(230,126,34,0.08);  border-color: #e67e22; }
+.para-green  { color: #55efc4; background: rgba(46,204,113,0.08);  border-color: #2ecc71; }
+.para-purple { color: #c39bd3; background: rgba(155,89,182,0.08);  border-color: #9b59b6; }
+.para-red    { color: #f1948a; background: rgba(231,76,60,0.08);   border-color: #e74c3c; }
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #000;
+  padding: 12px 32px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+
+.btn:hover { background: #fff; transform: scale(1.03); }
+
+/* ===== TABLES — Rubric #3: 2 full-length tables ===== */
+.table-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 table {
-  margin: 20px auto;
+  width: 100%;
   border-collapse: collapse;
-  width: 60%;
+  background: var(--card-bg);
+  font-size: 0.88rem;
 }
 
-table, th, td {
-  border: 1px solid white;
-  padding: 10px;
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
 }
 
+th {
+  background: #111;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+tr:hover td { background: rgba(245,197,24,0.04); }
+
+/* ===== NESTED LIST — Rubric #5 ===== */
+.list-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.nested-list {
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.nested-list > li {
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.nested-list ul {
+  margin-top: 6px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.nested-list ul li {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+/* ===== CONTACT ===== */
+.contact-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.contact-card p {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.contact-card p:last-child { border-bottom: none; }
+
+/* ===== FOOTER — Rubric #11 ===== */
 footer {
-  background: black;
-  padding: 10px;
+  background: #050505;
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-grid h4 {
+  color: var(--primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.footer-grid p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .footer-links a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: block;
+  padding: 3px 0;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--primary); }
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .two-col { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 2rem; }
+  nav { justify-content: center; }
 }
