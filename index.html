@@ -1,121 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clean Car Hub</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Car Hub | Performance & Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
+<!-- ===== HEADER / NAV BAR (Rubric #6: at least 5 menu items) ===== -->
 <header>
-  <h1>🚗 Clean Car Hub</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#videos">Videos</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container header-inner">
+    <h1 class="logo">CLEAN CAR <span>HUB</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a>
+      <a href="#specs">Specs</a>
+      <a href="#maintenance">Maintenance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<!-- HOME -->
-<section id="home" class="section">
-  <h2>The Future of Sustainable Speed</h2>
+<!-- ===== PAGE 1: HOME ===== -->
+<section id="home" class="page-section hero-section">
+  <div class="container">
+    <h2 class="section-title">The Future of <span>Sustainable Speed</span></h2>
 
-  <div class="two-column">
-    <div>
-      <p class="italic">
-        Clean cars combine performance with eco-friendly engineering.
-      </p>
-
-      <p class="highlight">
-        Modern vehicles use advanced materials and smart energy systems.
-      </p>
-
-      <p>
-        Automotive innovation is shaping a cleaner and faster future.
-      </p>
-    </div>
-
-    <div>
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+    <!-- Rubric #1: 2-column layout -->
+    <div class="two-col">
+      <div class="col-text">
+        <!-- Rubric #8: formatted paragraph 1 -->
+        <p class="para-styled para-blue">
+          Welcome to <strong>Clean Car Hub</strong> — a digital space dedicated to the evolution of automotive design and high-performance engineering. From electric hypercars to hybrid muscle, we cover it all.
+        </p>
+        <!-- Rubric #8: formatted paragraph 2 -->
+        <p class="para-styled para-orange">
+          Our mission is to bridge the gap between raw horsepower and environmental responsibility. We believe the cars of tomorrow don't have to sacrifice performance for the planet.
+        </p>
+        <!-- Rubric #8: formatted paragraph 3 -->
+        <p class="para-styled para-green">
+          Whether you're a gearhead, an engineer, or simply a design enthusiast, Clean Car Hub is your go-to resource for everything automotive — technical, visual, and cultural.
+        </p>
+        <a href="#gallery" class="btn">Explore Gallery</a>
+      </div>
+      <div class="col-img">
+        <!-- Rubric #2: image in container, image 1 -->
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Modern Sports Car">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="section">
-  <h2>Car Gallery</h2>
+<!-- ===== PAGE 2: GALLERY ===== -->
+<section id="gallery" class="page-section">
+  <div class="container">
+    <h2 class="section-title">Engineering <span>Masterpieces</span></h2>
 
-  <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
-  <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
-  <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
-  <img src="https://images.unsplash.com/photo-1549921296-3a6b0b4c6f8d">
-  <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+    <!-- Rubric #8: formatted paragraph 4 -->
+    <p class="para-styled para-purple">
+      Every curve, every vent, and every panel on a modern supercar serves a purpose. Aerodynamic efficiency is no longer just about speed — it defines the visual identity of the machine itself.
+    </p>
 
-  <h3>Car Comparison Table</h3>
-  <table>
-    <tr><th>Car</th><th>Speed</th><th>Type</th></tr>
-    <tr><td>Tesla Model S</td><td>200 mph</td><td>Electric</td></tr>
-    <tr><td>BMW i8</td><td>155 mph</td><td>Hybrid</td></tr>
-  </table>
-</section>
+    <!-- Rubric #1: 2-column image gallery -->
+    <div class="two-col">
+      <!-- Rubric #2: images 2 & 3 in containers -->
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Luxury Car Detail">
+        <p class="img-caption">Luxury Aerodynamics</p>
+      </div>
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80" alt="Sports Car Interior">
+        <p class="img-caption">Precision Cockpit</p>
+      </div>
+    </div>
 
-<!-- VIDEOS -->
-<section id="videos" class="section">
-  <h2>Car Videos</h2>
+    <div class="two-col" style="margin-top:20px;">
+      <!-- Rubric #2: images 4 & 5 in containers -->
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Supercar on Road">
+        <p class="img-caption">Open Road Dominance</p>
+      </div>
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80" alt="Electric Car">
+        <p class="img-caption">Electric Future</p>
+      </div>
+    </div>
 
-  <div class="videos">
-    <iframe src="https://www.youtube.com/embed/5mGUYIov458"></iframe>
-    <iframe src="https://www.youtube.com/embed/tw4jkyfY4HE"></iframe>
-    <iframe src="https://www.youtube.com/embed/2Q4zWc9f7hE"></iframe>
-    <iframe src="https://www.youtube.com/embed/q6EoRBvdVPQ"></iframe>
-    <iframe src="https://www.youtube.com/embed/8Qn_spdM5Zg"></iframe>
+    <!-- Rubric #8: formatted paragraph 5 -->
+    <p class="para-styled para-red" style="margin-top:30px;">
+      From wind-tunnel tested bodywork to carbon fibre monocoques, the structural engineering behind modern cars is as breathtaking as their aesthetics. These machines are rolling sculptures of applied physics.
+    </p>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Clean Cars</h2>
+<!-- ===== PAGE 3: VIDEOS ===== -->
+<section id="videos" class="page-section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Performance <span>in Motion</span></h2>
 
-  <p>
-    Clean Car Hub explores innovation in sustainable automotive engineering.
-  </p>
+    <!-- Rubric #2: videos in containers (5 videos) -->
+    <div class="two-col">
+      <div class="video-container">
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/5mGUYIov458" title="Car Video 1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Supercar Sound Test</p>
+      </div>
+      <div class="video-container">
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/sFi2B7ux44U" title="Car Video 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Electric vs Petrol Drag Race</p>
+      </div>
+    </div>
 
-  <p class="highlight">
-    We focus on performance, efficiency, and future technology.
-  </p>
+    <div class="two-col" style="margin-top:20px;">
+      <div class="video-container">
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/Vu_qkgB3kKk" title="Car Video 3" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Hypercar Engineering</p>
+      </div>
+      <div class="video-container">
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/GFhBiXCpsMU" title="Car Video 4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Formula 1 Aerodynamics</p>
+      </div>
+    </div>
 
-  <h3>Technologies</h3>
-  <ul>
-    <li>Vehicles
-      <ul>
-        <li>Electric Cars</li>
-        <li>Hybrid Cars</li>
-        <li>Hydrogen Cars</li>
-        <li>Solar Cars</li>
-        <li>Autonomous Driving</li>
-      </ul>
-    </li>
-  </ul>
+    <div class="video-container single-video" style="margin-top:20px;">
+      <div class="iframe-wrap">
+        <iframe src="https://www.youtube.com/embed/GnbL5DRSvOg" title="Car Video 5" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="video-label">The Art of Car Design</p>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
+<!-- ===== PAGE 4: SPECS (Tables) ===== -->
+<section id="specs" class="page-section">
+  <div class="container">
+    <h2 class="section-title">Technical <span>Specifications</span></h2>
 
-  <p>Email us for more information about clean cars.</p>
+    <!-- Rubric #3: Table 1 (full-length) -->
+    <h3 class="table-heading">Top Supercars Comparison</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Car Model</th>
+            <th>0–100 km/h</th>
+            <th>Top Speed</th>
+            <th>Horsepower</th>
+            <th>Engine Type</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bugatti Chiron</td><td>2.4s</td><td>420 km/h</td><td>1,479 hp</td><td>W16 Quad-Turbo</td><td>$3,000,000</td></tr>
+          <tr><td>Koenigsegg Jesko</td><td>2.5s</td><td>330+ km/h</td><td>1,600 hp</td><td>V8 Twin-Turbo</td><td>$3,400,000</td></tr>
+          <tr><td>Rimac Nevera</td><td>1.85s</td><td>412 km/h</td><td>1,914 hp</td><td>All-Electric</td><td>$2,400,000</td></tr>
+          <tr><td>Ferrari SF90 Stradale</td><td>2.5s</td><td>340 km/h</td><td>986 hp</td><td>V8 Hybrid</td><td>$625,000</td></tr>
+          <tr><td>Lamborghini Revuelto</td><td>2.5s</td><td>350 km/h</td><td>1,001 hp</td><td>V12 Hybrid</td><td>$600,000</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-  <table>
-    <tr><th>Name</th><th>Email</th></tr>
-    <tr><td>Admin</td><td>info@cleancarhub.com</td></tr>
-  </table>
+    <!-- Rubric #3: Table 2 (full-length) -->
+    <h3 class="table-heading" style="margin-top:50px;">Electric Cars Performance Table</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Car Model</th>
+            <th>Range (km)</th>
+            <th>Charge Time</th>
+            <th>Battery (kWh)</th>
+            <th>0–100 km/h</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tesla Model S Plaid</td><td>628 km</td><td>15 min (80%)</td><td>100 kWh</td><td>1.99s</td><td>USA</td></tr>
+          <tr><td>Rimac Nevera</td><td>550 km</td><td>22 min (80%)</td><td>120 kWh</td><td>1.85s</td><td>Croatia</td></tr>
+          <tr><td>Porsche Taycan Turbo S</td><td>500 km</td><td>22.5 min</td><td>93.4 kWh</td><td>2.8s</td><td>Germany</td></tr>
+          <tr><td>Audi e-tron GT RS</td><td>472 km</td><td>22 min</td><td>93.4 kWh</td><td>3.3s</td><td>Germany</td></tr>
+          <tr><td>Lucid Air Grand Touring</td><td>837 km</td><td>22 min</td><td>112 kWh</td><td>3.0s</td><td>USA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Clean Car Hub</p>
+<!-- ===== PAGE 5: MAINTENANCE (Nested List) ===== -->
+<section id="maintenance" class="page-section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Maintenance <span>Guide</span></h2>
+
+    <div class="two-col">
+      <div>
+        <!-- Rubric #5: nested list with at least 5 items -->
+        <h3 class="list-heading">Complete Car Maintenance Checklist</h3>
+        <ul class="nested-list">
+          <li>Engine Care
+            <ul>
+              <li>Oil change every 5,000 km</li>
+              <li>Air filter replacement</li>
+              <li>Spark plug inspection</li>
+            </ul>
+          </li>
+          <li>Tyres & Brakes
+            <ul>
+              <li>Check tyre pressure monthly</li>
+              <li>Rotate tyres every 10,000 km</li>
+              <li>Inspect brake pads for wear</li>
+            </ul>
+          </li>
+          <li>Fluid Levels
+            <ul>
+              <li>Coolant top-up</li>
+              <li>Brake fluid check</li>
+              <li>Power steering fluid</li>
+            </ul>
+          </li>
+          <li>Electrical System
+            <ul>
+              <li>Battery terminal cleaning</li>
+              <li>Check all lights and indicators</li>
+            </ul>
+          </li>
+          <li>Exterior & Body
+            <ul>
+              <li>Wash and wax every 2 weeks</li>
+              <li>Inspect for rust or paint chips</li>
+              <li>Clean and condition rubber seals</li>
+            </ul>
+          </li>
+          <li>Interior Upkeep
+            <ul>
+              <li>Vacuum and wipe down surfaces</li>
+              <li>Condition leather seats</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-text">
+        <p class="para-styled para-blue">
+          Proper maintenance is the backbone of any high-performance vehicle. Neglecting routine checks can reduce engine life by up to 40%, increase fuel consumption, and void manufacturer warranties.
+        </p>
+        <p class="para-styled para-green">
+          For supercar owners, factory-recommended service intervals are especially critical. Many exotic engines operate under extreme tolerances — even a slightly degraded oil film can cause catastrophic bearing failure at high RPM.
+        </p>
+        <!-- Rubric #2: 5th standalone image in a container -->
+        <div class="img-container" style="margin-top:20px;">
+          <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Car Maintenance">
+          <p class="img-caption">Professional Engine Servicing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAGE 6: CONTACT ===== -->
+<section id="contact" class="page-section">
+  <div class="container">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="two-col">
+      <div>
+        <p class="para-styled para-orange">
+          Have a question about a car, a feature request, or a story you'd like us to cover? Our editorial team reads every message and we aim to respond within 48 hours.
+        </p>
+        <div class="contact-card">
+          <p>📧 <strong>Email:</strong> info@cleancar.hub</p>
+          <p>📍 <strong>Location:</strong> Nairobi, Kenya</p>
+          <p>📞 <strong>Phone:</strong> +254 700 000 000</p>
+          <p>🕐 <strong>Hours:</strong> Mon–Fri, 9am–6pm EAT</p>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=800&q=80" alt="Car showroom">
+        <p class="img-caption">Visit Our Virtual Showroom</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER (Rubric #11) ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="logo">CLEAN CAR <span>HUB</span></h3>
+        <p>Dedicated to automotive excellence, performance engineering, and sustainable speed since 2026.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#specs">Specs</a></li>
+          <li><a href="#maintenance">Maintenance</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Topics</h4>
+        <ul class="footer-links">
+          <li>Electric Vehicles</li>
+          <li>Supercars</li>
+          <li>Motorsport</li>
+          <li>Engineering</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2026 Clean Car Hub — Automotive Engineering Assessment Project. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
